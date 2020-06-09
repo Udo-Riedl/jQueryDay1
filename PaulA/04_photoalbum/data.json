@@ -1,0 +1,39 @@
+data =`[{
+    "name" : "Andreas",
+    "image" : "father.jpg",
+    "relation" : "parent"
+},{
+    "name" : "Susanne",
+    "image" : "mother.jpg",
+    "relation" : "parent"
+},{
+    "name" : "Anna",
+    "image" : "sister01.jpg",
+    "relation" : "sibling"
+},{
+    "name" : "Helene",
+    "image" : "sister02.jpg",
+    "relation" : "sibling"
+},{
+    "name" : "Paul",
+    "image" : "brother04.jpg",
+    "relation" : "sibling"
+},{
+    "name" : "Luise",
+    "image" : "sister03.jpg",
+    "relation" : "sibling"
+},{
+    "name" : "Alexander",
+    "image" : "friend01.jpg",
+    "relation" : "friend"
+},{
+    "name" : "Jakob",
+    "image" : "friend02.jpg",
+    "relation" : "friend"
+},{
+    "name" : "Chris",
+    "image" : "friend03.jpg",
+    "relation" : "friend"
+}
+]`;
+

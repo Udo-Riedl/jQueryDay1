@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		div.family{
+			display: grid;
+			grid-template-columns: 33% 33% 33%;
+			grid-gap: 10px;
+		}
+		div.family div {
+		}
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 40vh;
+			opacity: 0.8;
+		}
+		h1, h2 {
+			padding-left: 5%;
+			font-family: 'Roboto Mono', monospace;
+		}
+		.parent {
+			background-color: rgba(69, 102, 53, 0.6);
+		}
+		.sibling {
+			background-color: rgba(247,223,124, 0.6);
+		}
+		.friend {
+			background-color: rgba(158,188,198, 0.6);
+		}
+	</style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<script  type="text/javascript" src="data.json"></script>
+	<script>
+		let family = JSON.parse(data);
+		let container = "<div class=\"family\"></div>"
+		document.write(container)
+
+		let getcontainer = document.querySelector(".family ");
+
+		for (person of family) {
+
+			getcontainer.innerHTML +=
+						`<div class="${person.relation}"><img src=\"./img/${person.image}\">
+							<h1>${person.name}</h1>
+							<h2>${person.relation}</h2>
+						</div>`
+
+
+		}
+
+
+		 
+	</script>
+</body>
+</html>
